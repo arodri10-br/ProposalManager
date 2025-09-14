@@ -24,6 +24,12 @@ class Documento(Base):
     classificacao_chave = Column(String(50), nullable=False)  # FK lógica
     retencao_chave = Column(String(50), nullable=False)       # FK lógica
 
+    origem_tipo    = Column(String(10), nullable=True)     # 'UPLOAD' | 'URL'
+    origem_nome    = Column(String(255), nullable=True)    # nome lógico
+    origem_mime    = Column(String(100), nullable=True)
+    origem_sha256  = Column(String(64), nullable=True)
+    origem_tamanho = Column(Integer, nullable=True)
+
     created_at = Column(TIMESTAMP, server_default=func.now())
     updated_at = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
     created_by = Column(Integer, ForeignKey("pm_usuario.id_usuario"), nullable=True)
