@@ -113,7 +113,6 @@ def extract_docx_plaintext_and_chunks(file_bytes: bytes, max_chars: int = 1200, 
     chunks = extract_plaintext_chunks(full_text, max_chars=max_chars, overlap=overlap)
     return full_text, chunks
 
-
 # ---------------------------
 # Helpers de referência de origem (para CONF/INT)
 # ---------------------------
