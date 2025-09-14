@@ -1,0 +1,98 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / pacotes
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+*.manifest
+*.spec
+
+# Logs
+*.log
+*.out
+*.err
+
+# =========================
+# Virtualenv / Ambientes
+# =========================
+venv/
+ENV/
+env/
+.venv/
+
+# =========================
+# IDE / Editores
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Banco de Dados
+# =========================
+*.db
+*.sqlite3
+*.sqlite
+
+# Alembic (migrations)
+alembic.ini
+alembic/versions/*.pyc
+
+# =========================
+# Configuração / Ambiente
+# =========================
+.env
+.env.*
+!.env.example   # mantém um modelo de env para referência
+
+# =========================
+# Testes / Coverage
+# =========================
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+pytest_cache/
+.pytest_cache/
+nosetests.xml
+
+# =========================
+# Cache / Temporários
+# =========================
+*.pid
+*.seed
+*.bak
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# =========================
+# Docker
+# =========================
+*.pid
+*.tar
+*.sock
+*.lock
+.dockerignore
+docker-compose.override.yml
+
+# =========================
+# Banco de dados SQLite
+# =========================
+data/*.db
+data/*.sqlite
+data/*.sqlite3

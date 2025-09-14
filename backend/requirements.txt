@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+passlib[bcrypt]
+python-dotenv
+python-multipart
+PyPDF2
+tiktoken
+openai
+requests
+psycopg2-binary
+sentence-transformers
+torch
+beautifulsoup4
+requests
